@@ -8,6 +8,10 @@ h1 {
   color: rgb(255, 255, 255);
 }
 
+p, a {
+  font-size: 20px;
+}
+
 main {
   content: 10px;
 }
@@ -41,15 +45,14 @@ h2::before {
 
 p {
   margin: 0;
-  font-size: 20px;
 }
-p:nth-child(3)::first-letter  {
+p:nth-of-type(2)::first-letter  {
   font-weight: bold;
   color: rgb(97, 206, 249);
 }
 
 img {
-  margin: 10px;
+  margin: 10px 0;
   width: 70%;
 }
 
@@ -57,8 +60,8 @@ footer {
   background-color: rgb(244,79,79);
   text-align: center;
 }
+
 a {
-  font-size: 20px;
   color: rgb(255, 255, 255);
 }
 a:visited {
@@ -70,7 +73,7 @@ a:hover {
 
 @media screen and (max-width: 768px) {
   #parent {
-    display: block;
+    flex-direction: column;
   }
   h2{
     font-size: 30px;
@@ -78,5 +81,4 @@ a:hover {
   p{
     font-size: 25px;
   }
-  
 }
